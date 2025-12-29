@@ -8,7 +8,7 @@ import time
 import os
 
 # 請確認這裡填入的是正確的 Key
-API_KEY = "AIzaSyAGrZW9H2_02Dmy7i3NEj9eTWyN1jO9zvo" 
+API_KEY = "請填入自己的api key" 
 
 # 立即配置 Gemini，確保後續函式都能抓到 Key
 if API_KEY and "填在這裡" not in API_KEY:
@@ -316,4 +316,5 @@ if uploaded:
                                 # 萬一 AI 沒乖乖加分隔線，就直接印出全部
                                 st.markdown(full_text)
         else:
+
             st.error("⚠️ 請在程式碼開頭填入正確的 API Key！")
